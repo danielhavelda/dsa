@@ -1,5 +1,6 @@
 export default function bubbleSort(input: number[]): number[] | Error {
   if (input.length === 0) throw new Error("Length of the input should be greater than 0.");
+  if (input.length === 1) return input;
 
   for (let i = 0; i < input.length; i++) {
     for (let j = 0; j < input.length - 1 - i; j++) {
