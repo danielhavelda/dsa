@@ -1,4 +1,4 @@
-export default function insertionSort(input: number[]): number[] {
+export default function insertionSort(input: number[]): number[] | Error {
   if (input.length === 0) throw new Error("Length of the input should be greater than 0.");
 
   for (let i = 0; i < input.length; i++) {

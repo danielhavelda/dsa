@@ -1,4 +1,4 @@
-export default function selectionSort(input: number[]): number[] {
+export default function selectionSort(input: number[]): number[] | Error {
   if (input.length === 0) throw new Error("Length of the input should be greater than 0.");
 
   for (let i = 0; i < input.length - 1; i++) {
