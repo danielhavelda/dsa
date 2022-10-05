@@ -1,17 +1,11 @@
 import bubbleSort from "./bubble-sort";
-import { describe, expect, test } from "@jest/globals";
+import { describe, expect, test, afterEach } from "@jest/globals";
 
-let input: number[] | [];
-let expected: number[] | [];
-
-beforeEach(() => {
-  input = [3, 2, 7, 5, 8, 20, 11, 69, 1, 420];
-  expected = [1, 2, 3, 5, 7, 8, 11, 20, 69, 420];
-});
+let input: number[] = [3, 2, 7, 5, 8, 20, 11, 69, 1, 420];
+const expected: number[] = [1, 2, 3, 5, 7, 8, 11, 20, 69, 420];
 
 afterEach(() => {
-  input = [];
-  expected = [];
+  input = [3, 2, 7, 5, 8, 20, 11, 69, 1, 420];
 });
 
 describe("Argument checks", () => {
