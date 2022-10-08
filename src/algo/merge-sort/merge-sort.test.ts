@@ -14,7 +14,7 @@ describe("Argument checks", () => {
   });
 });
 
-describe("Functionality checkst", () => {
+describe("Functionality checks", () => {
   test("Recursive: Sorting in ascending order", () => {
     expect(recursiveMergeSort(input)).toEqual(expected);
   });
